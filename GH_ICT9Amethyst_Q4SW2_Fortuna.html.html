@@ -1,0 +1,157 @@
+<html>
+<head>
+	<title> Time Converter</title>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.slim.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+	<style>
+		table{
+			border-style: dotted;
+			border-width: 2px;
+			border-color: black	;
+			margin: 10px;
+		}
+	</style>
+</head>
+<body class="bg-secondary">
+<center>
+<h1 class="text-light"> Time Converter </h1>
+<h4 class="text-light"> Please only input numerical value. </h4>
+<h6 class="text-light"> Press F5 or refresh the tab to clear. </h6>
+<table> 
+<tr> <td>
+	<h5> Minute converter </h5>
+<input type="text" id="id1" placeholder="Enter Value (Minutes)" class="bg-dark text-light"> <br>
+<input type="submit" value="To seconds" onclick="myFunction1()" class="btn-dark"> <br>
+<input type="submit" value="To hours" onclick="myFunction2()" class="btn-dark"> <br>
+<input type="submit" value="To days" onclick="myFunction3()" class="btn-dark"> <br>
+<p id="sec1" style="color: CAC9DA;"></p>
+<script>
+	function myFunction1( ) {
+		var num1 = document.getElementById('id1').value;
+		var num2 = 60
+		var answer = Number(num1) * Number(num2);
+		document.getElementById('sec1').innerHTML = "The answer is " + answer + " seconds";
+	}
+</script>
+<script>
+	function myFunction2( ) {
+		var num1 = document.getElementById('id1').value;
+		var num2 = 60
+		var answer = Number(num1) / Number(num2);
+		document.getElementById('sec1').innerHTML = "The answer is " + answer + " hours";
+	}
+</script>
+<script>
+	function myFunction3( ) {
+		var num1 = document.getElementById('id1').value;
+		var num2 = 1440
+		var answer = Number(num1) / Number(num2);
+		document.getElementById('sec1').innerHTML = "The answer is " + answer + " days";
+	}
+</script>
+</td> </tr> </table> <br>
+<table>
+<tr> <td>
+	<h5> Second converter </h5>
+<input type="text" id="id2" placeholder="Enter Value (Seconds)" class="bg-dark text-light"> <br>
+<input type="submit" value="To minutes" onclick="myFunction4()" class="btn-dark"> <br>
+<input type="submit" value="To hours" onclick="myFunction5()" class="btn-dark"> <br>
+<input type="submit" value="To days" onclick="myFunction6()" class="btn-dark"> <br>
+<p id="sec2" style="color: CAC9DA;"></p>
+<script>
+	function myFunction4( ) {
+		var num1 = document.getElementById('id2').value;
+		var num2 = 60
+		var answer = Number(num1) / Number(num2);
+		document.getElementById('sec2').innerHTML = "The answer is " + answer + " minutes";
+	}
+</script>
+<script>
+	function myFunction5( ) {
+		var num1 = document.getElementById('id2').value;
+		var num2 = 3600
+		var answer = Number(num1) / Number(num2);
+		document.getElementById('sec2').innerHTML = "The answer is " + answer + " hours";
+	}
+</script>
+<script>
+	function myFunction6( ) {
+		var num1 = document.getElementById('id2').value;
+		var num2 =  86400
+		var answer = Number(num1) / Number(num2);
+		document.getElementById('sec2').innerHTML = "The answer is " + answer + " days";
+	}
+</script>
+</td> </tr> </table> <br>
+<table>
+<tr> <td>
+	<h5> Hour converter </h5>
+<input type="text" id="id3" placeholder="Enter Value (Hours)" class="bg-dark text-light"> <br>
+<input type="submit" value="To seconds" onclick="myFunction7()" class="btn-dark"> <br>
+<input type="submit" value="To minutes" onclick="myFunction8()" class="btn-dark"> <br>
+<input type="submit" value="To days" onclick="myFunction9()" class="btn-dark"> <br>
+<p id="sec3" style="color: CAC9DA;"></p>
+<script>
+	function myFunction7( ) {
+		var num1 = document.getElementById('id3').value;
+		var num2 = 3600
+		var answer = Number(num1) * Number(num2);
+		document.getElementById('sec3').innerHTML = "The answer is " + answer + " seconds";
+	}
+</script>
+<script>
+	function myFunction8( ) {
+		var num1 = document.getElementById('id3').value;
+		var num2 = 60
+		var answer = Number(num1) * Number(num2);
+		document.getElementById('sec3').innerHTML = "The answer is " + answer + " minutes";
+	}
+</script>
+<script>
+	function myFunction9( ) {
+		var num1 = document.getElementById('id3').value;
+		var num2 =  24
+		var answer = Number(num1) / Number(num2);
+		document.getElementById('sec3').innerHTML = "The answer is " + answer + " days";
+	}
+</script>
+</td> </tr> </table> <br>
+<table>
+<tr> <td>
+	<h5> Day converter </h5>
+<input type="text" id="id4" placeholder="Enter Value (Days)" class="bg-dark text-light"> <br>
+<input type="submit" value="To seconds" onclick="myFunction10()" class="btn-dark"> <br>
+<input type="submit" value="To minutes" onclick="myFunction11()" class="btn-dark"> <br>
+<input type="submit" value="To hours" onclick="myFunction12()" class="btn-dark"> <br>
+<p id="sec4" style="color: CAC9DA;"></p>
+<script>
+	function myFunction10( ) {
+		var num1 = document.getElementById('id4').value;
+		var num2 = 86400
+		var answer = Number(num1) * Number(num2);
+		document.getElementById('sec4').innerHTML = "The answer is " + answer + " seconds";
+	}
+</script>
+<script>
+	function myFunction11( ) {
+		var num1 = document.getElementById('id4').value;
+		var num2 = 1440
+		var answer = Number(num1) * Number(num2);
+		document.getElementById('sec4').innerHTML = "The answer is " + answer + " minutes";
+	}
+</script>
+<script>
+	function myFunction12( ) {
+		var num1 = document.getElementById('id4').value;
+		var num2 =  24
+		var answer = Number(num1) * Number(num2);
+		document.getElementById('sec4').innerHTML = "The answer is " + answer + " hours";
+	}
+</script>
+</td> </tr> </table> <br>
+</center>
+</body>
+</html>
